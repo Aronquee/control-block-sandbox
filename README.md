@@ -64,7 +64,8 @@ The sandbox is ready!
 
 You can try the latest version online without installing anything:
 
-👉 [Live Demo on Netlify](https://your-netlify-url.netlify.app](https://incredible-cannoli-c926fd.netlify.app/)
+👉 **[Live Demo on Netlify](https://your-netlify-url.netlify.app](https://incredible-cannoli-c926fd.netlify.app)**
+
 
 ## 📖 How to Use
 
