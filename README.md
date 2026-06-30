@@ -1,16 +1,48 @@
-# React + Vite
+# ⚙️ Control Block Diagram Sandbox
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+[![GitHub last commit](https://img.shields.io/github/last-commit/Aronquee/control-block-sandbox)](https://github.com/Aronquee/control-block-sandbox)
+[![GitHub repo size](https://img.shields.io/github/repo-size/Aronquee/control-block-sandbox)](https://github.com/Aronquee/control-block-sandbox)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://img.shields.io/netlify/your-netlify-id)](https://app.netlify.com/sites/your-site-name/deploys)
 
-Currently, two official plugins are available:
+**A visual sandbox for building, connecting, and rearranging control‑system block diagrams by hand.**  
+No automatic simplification — just you, the canvas, and the rules of signal flow.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Block diagram sandbox screenshot](screenshot.png)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🧱 **Drag & drop** blocks, summing points, pickoff points, input/output terminals, and text notes
+- ✏️ **Inline editing** – click any label or note to rename transfer functions
+- 🔗 **Full‑side connections** – attach wires to **any side** of a block; the arrow follows the drag direction
+- 🔴 **Red feedback edges** – toggle a checkbox to draw feedback paths in red
+- 🖱️ **Interactive waypoints** – double‑click any wire to add bend points, then drag to shape the path
+- 📐 **Reconnectable edges** – grab the arrowhead and rewire without deleting
+- 💾 **Save / load** – export your diagram as a JSON file and reopen it later
+- 🎨 **Engineering‑inspired UI** – mini‑map, zoom/pan, snap‑to‑grid, and a clean toolbar
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🧠 Why “sandbox”?
+
+Unlike automatic solvers, this tool respects how you learn control systems:  
+**you** decide the block arrangement, **you** move the pickoff points, **you** draw the feedback loops.  
+It’s a scratchpad that helps you reason about Mason’s rule, signal‑flow graphs, and block‑diagram algebra **without the computer doing the thinking**.
+
+## 🧰 Tech Stack
+
+- **React 18** + **Vite** (fast development & production builds)
+- **React Flow** (custom node/edge rendering, drag‑and‑drop, mini‑map)
+- **Plain CSS** (no heavy component library – lightweight and modifiable)
+
+## 🚀 Getting Started (local)
+
+```bash
+# clone the repo
+git clone https://github.com/Aronquee/control-block-sandbox.git
+cd control-block-sandbox
+
+# install dependencies
+npm install
+
+# start the dev server
+npm run dev
