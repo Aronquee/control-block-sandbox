@@ -44,12 +44,12 @@ export default function App() {
       if (!type || !nodeTypesMap[type]) return;
 
       const position = reactFlowWrapper.current
-        ? (reactFlowWrapper.current as any).screenToFlowPosition({
+        ? reactFlowWrapper.current.screenToFlowPosition({
             x: event.clientX,
             y: event.clientY,
           })
         : { x: 0, y: 0 };
-
+        
       const newNode = {
         id: getId(),
         type,
