@@ -92,3 +92,61 @@
 /* Adjust handle positions if needed */
 .summing-node .react-flow__handle-top { top: 0; }
 .summing-node .react-flow__handle-bottom { bottom: 0; }
+.terminal-node {
+  background: #eee;
+  border: 2px solid #666;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 70px;
+}
+.terminal-label {
+  outline: none;
+}
+.input-node {
+  border-color: #2e7d32;
+}
+.output-node {
+  border-color: #c62828;
+}
+.note-node {
+  background: #fff9c4;
+  border: 1px dashed #f9a825;
+  border-radius: 4px;
+  padding: 8px;
+  min-width: 100px;
+  min-height: 40px;
+  font-size: 13px;
+}
+.note-text {
+  outline: none;
+  white-space: pre-wrap;
+}
+.block-node .react-flow__handle {
+  width: 14px;
+  height: 14px;
+  background: #555;
+  border: 2px solid white;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+/* When one of the two handles is hovered, they both light up – neat effect */
+.block-node .react-flow__handle:hover {
+  opacity: 1;
+  background: #000;
+}
+
+/* Visually, we can colour the source and target differently, but since they overlap
+   the one on top will be seen. Set a higher z‑index for the source so it appears as the
+   “dominant” dot, but both will react to interaction. */
+.block-node .react-flow__handle.source {
+  z-index: 2;          /* source appears on top */
+  background: #4caf50; /* green = can start a connection */
+}
+.block-node .react-flow__handle.target {
+  z-index: 1;          /* target below, but still fully functional */
+  background: #2196f3; /* blue = can receive a connection */
+}

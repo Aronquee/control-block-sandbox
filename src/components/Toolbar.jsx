@@ -2,9 +2,12 @@ const nodeTypes = [
   { type: 'block', label: 'Block' },
   { type: 'summing', label: 'Summing Point' },
   { type: 'pickoff', label: 'Pickoff Point' },
+  { type: 'input', label: 'Entrada' },
+  { type: 'output', label: 'Saída' },
+  { type: 'note', label: 'Note (text)', }
 ];
 
-export default function Toolbar() {
+export default function Toolbar({ redEdgeMode, onToggleRedMode }) {
   const onDragStart = (event, nodeType) => {
     event.dataTransfer.setData('application/reactflow', nodeType);
     event.dataTransfer.effectAllowed = 'move';
@@ -23,6 +26,17 @@ export default function Toolbar() {
           {nt.label}
         </div>
       ))}
-    </aside>
+      <hr />
+    <div className="toolbar-control">
+      <label>
+        <input
+          type="checkbox"
+          checked={redEdgeMode}
+          onChange={onToggleRedMode}
+        />{' '}
+        Red feedback edge
+      </label>
+    </div>
+  </aside>
   );
 }
