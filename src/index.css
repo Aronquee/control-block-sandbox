@@ -67,3 +67,28 @@
   width: 10px;
   height: 10px;
 }
+
+.summing-node {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.sign {
+  position: absolute;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 10;
+}
+.sign-top {
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sign-bottom {
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Adjust handle positions if needed */
+.summing-node .react-flow__handle-top { top: 0; }
+.summing-node .react-flow__handle-bottom { bottom: 0; }
