@@ -13,7 +13,8 @@
 </p>
 
 
-<img width="1918" height="963" alt="image" src="https://github.com/user-attachments/assets/909efb5f-58bb-47ad-89f3-837334583b8c" />
+<img width="1858" height="927" alt="Sem título" src="https://github.com/user-attachments/assets/f2ef6878-3e49-411b-ab87-10a701b6817e" />
+
 
 
 ## 🎯 Why this exists
@@ -29,7 +30,8 @@ Perfect for students, teachers, or anyone who wants a friction‑less way to ske
 - **Red feedback edges** – Toggle a mode to draw back‑propagation paths in red.
 - **Interactive waypoints** – Double‑click an edge to add bend points. Drag them to route lines exactly where you want.
 - **Editable labels** – Click any block or note to type a transfer function or annotation.
-- **Save / Load** – Export your diagram as a JSON file and load it later.
+- **Select Diagrams** – Hold Shift and Click to select groups of blocks
+- **Copy / Paste** - Ctrl + C / Ctrl + V  Copy groups of objects to simplify analysis  
 - **Pan & zoom** – Infinite canvas with minimap and controls.
 - **Clean, modern UI** – Lightweight, responsive, and built for mouse + keyboard.
 
@@ -80,9 +82,7 @@ You can try the latest version online without installing anything:
 
 ## 🗺️ Planned Features (maybe)
 
-- [ ] Undo / Redo
 - [ ] Automatic alignment and snap‑to‑grid
-- [ ] Grouping nodes into subsystems
 - [ ] Export to SVG / PNG for reports
 
 ## 📦 Deployment
