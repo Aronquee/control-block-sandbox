@@ -1,5 +1,3 @@
-import { DragEvent } from 'react';
-
 const nodeTypes = [
   { type: 'block', label: 'Block' },
   { type: 'summing', label: 'Summing Point' },
@@ -7,7 +5,7 @@ const nodeTypes = [
 ];
 
 export default function Toolbar() {
-  const onDragStart = (event: DragEvent, nodeType: string) => {
+  const onDragStart = (event, nodeType) => {
     event.dataTransfer.setData('application/reactflow', nodeType);
     event.dataTransfer.effectAllowed = 'move';
   };
