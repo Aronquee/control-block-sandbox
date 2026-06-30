@@ -33,6 +33,17 @@ Perfect for students, teachers, or anyone who wants a friction‑less way to ske
 - **Pan & zoom** – Infinite canvas with minimap and controls.
 - **Clean, modern UI** – Lightweight, responsive, and built for mouse + keyboard.
 
+## 📖 How to Use
+
+1. **Drag** components from the left toolbar onto the canvas.
+2. **Connect** them by dragging from one handle (small dot) to another.  
+   - **Right‑click** a node to delete it.  
+   - **Double‑click** a block’s text to edit the transfer function.  
+   - **Double‑click** on any edge to add a waypoint; drag the waypoint to bend the line.  
+   - **Toggle “Red feedback edge”** in the toolbar to draw feedback paths in red.
+3. Use the **minimap** (bottom‑right) and **controls** (top‑left) to navigate.
+4. Use Note **Note(text)** to write notes.
+   
 ## 🛠️ Tech Stack
 
 | Layer        | Technology |
@@ -66,18 +77,6 @@ You can try the latest version online without installing anything:
 
 👉 **[Live Demo on Netlify](https://your-netlify-url.netlify.app](https://incredible-cannoli-c926fd.netlify.app)**
 
-
-## 📖 How to Use
-
-1. **Drag** components from the left toolbar onto the canvas.
-2. **Connect** them by dragging from one handle (small dot) to another.  
-   - **Right‑click** a node to delete it.  
-   - **Double‑click** a block’s text to edit the transfer function.  
-   - **Double‑click** on any edge to add a waypoint; drag the waypoint to bend the line.  
-   - **Toggle “Red feedback edge”** in the toolbar to draw feedback paths in red.
-3. Use the **minimap** (bottom‑right) and **controls** (top‑left) to navigate.
-4. Use Note **Note(text)** to write notes.
-5. 
 
 ## 🗺️ Planned Features (maybe)
 
