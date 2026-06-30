@@ -2,9 +2,10 @@ const nodeTypes = [
   { type: 'block', label: 'Block' },
   { type: 'summing', label: 'Summing Point' },
   { type: 'pickoff', label: 'Pickoff Point' },
-  { type: 'input', label: 'Entrada' },
-  { type: 'output', label: 'Saída' },
-  { type: 'note', label: 'Note (text)', }
+  { type: 'input', label: 'Input' },
+  { type: 'output', label: 'Output' },
+  { type: 'note', label: 'Note (text)', },
+  { type: 'highlight', label: 'Highlight Box' },
 ];
 
 export default function Toolbar({ redEdgeMode, onToggleRedMode }) {
